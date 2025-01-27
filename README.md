@@ -15,5 +15,11 @@ poetry install
 Install [Ollama](https://ollama.com/) if you don't already have it. Then pull the model you want:
 
 ```bash
-ollama pull llama3.3
+ollama pull llama3.2
+```
+
+Finally, run the script:
+
+```bash
+poetry run python src/starter.py
 ```

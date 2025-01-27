@@ -9,7 +9,7 @@ documents = SimpleDirectoryReader("data").load_data()
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en-v1.5")
 
 # ollama
-Settings.llm = Ollama(model="llama3.3", request_timeout=360.0)
+Settings.llm = Ollama(model="llama3.2", request_timeout=360.0)
 
 if os.path.exists("./storage/docstore.json"):
     print('Existing index found at "./storage/docstore.json". Loading index from storage.')
